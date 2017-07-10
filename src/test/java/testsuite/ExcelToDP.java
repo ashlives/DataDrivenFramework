@@ -1,7 +1,8 @@
-package utilities;
+package testsuite;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import utilities.ExcelApiTest;
 
 /**
  * Created by Ashish on 10-07-2017.
