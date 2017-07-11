@@ -7,11 +7,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by Ashish on 11-07-2017.
- */
 public class GetCellDataByColNumber extends GetCellDataByColName{
-
 
     public String getCellData(String sheetName,int colNum,int rowNum)
     {

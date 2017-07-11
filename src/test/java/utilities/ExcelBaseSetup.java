@@ -21,13 +21,4 @@ public class ExcelBaseSetup {
     public XSSFCell cell = null;
     String xlFilePath;
 
-
-    /*public ExcelBaseSetup(String xlFilePath) throws Exception
-    {
-        this.xlFilePath = xlFilePath;
-        fis = new FileInputStream(xlFilePath);
-        workbook = new XSSFWorkbook(fis);
-        fis.close();
-
-    }*/
 }
