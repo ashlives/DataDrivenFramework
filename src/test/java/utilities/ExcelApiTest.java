@@ -13,17 +13,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by Ashish on 10-07-2017.
- */
-public class ExcelApiTest {
-    public FileInputStream fis = null;
-    public FileOutputStream fos = null;
-    public XSSFWorkbook workbook = null;
-    public XSSFSheet sheet = null;
-    public XSSFRow row = null;
-    public XSSFCell cell = null;
-    String xlFilePath;
+public class ExcelApiTest extends SetCellData{
 
     public ExcelApiTest(String xlFilePath) throws Exception
     {
@@ -33,8 +23,20 @@ public class ExcelApiTest {
         fis.close();
     }
 
-    public boolean setCellData(String sheetName, int colNumber, int rowNum, String value)
-    {
+
+
+/*public FileInputStream fis = null;
+    public FileOutputStream fos = null;
+    public XSSFWorkbook workbook = null;
+    public XSSFSheet sheet = null;
+    public XSSFRow row = null;
+    public XSSFCell cell = null;
+    String xlFilePath;
+
+
+
+public boolean setCellData(String sheetName, int colNumber, int rowNum, String value)
+    *//*{
         try
         {
             sheet = workbook.getSheet(sheetName);
@@ -60,14 +62,16 @@ public class ExcelApiTest {
         return true;
     }
 
-    public int getRowCount(String sheetName)
+
+public int getRowCount(String sheetName)
     {
         sheet = workbook.getSheet(sheetName);
         int rowCount = sheet.getLastRowNum()+1;
         return rowCount;
     }
 
-    public int getColumnCount(String sheetName)
+
+public int getColumnCount(String sheetName)
     {
         sheet = workbook.getSheet(sheetName);
         row = sheet.getRow(0);
@@ -75,7 +79,8 @@ public class ExcelApiTest {
         return colCount;
     }
 
-    public String getCellData(String sheetName, String colName, int rowNum)
+
+public String getCellData(String sheetName, String colName, int rowNum)
     {
         try
         {
@@ -115,7 +120,8 @@ public class ExcelApiTest {
         }
     }
 
-    public String getCellData(String sheetName,int colNum,int rowNum)
+
+public String getCellData(String sheetName,int colNum,int rowNum)
     {
         try
         {
@@ -144,5 +150,6 @@ public class ExcelApiTest {
             e.printStackTrace();
             return "row "+rowNum+" or column "+colNum +" does not exist  in Excel";
         }
-    }
+    }*/
+
 }

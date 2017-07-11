@@ -30,8 +30,8 @@ public class WriteDataToExcel {
         if(cell == null)
             cell = row.createCell(4);
 
-        font.setFontName("Comic Sans MS");
-        font.setFontHeight(14.0);
+        //font.setFontName("Comic Sans MS");
+        //font.setFontHeight(14.0);
         font.setBold(true);
         font.setColor(HSSFColor.WHITE.index);
 
